@@ -97,13 +97,38 @@ a.nav-link {
     margin-bottom: 18%;
 }
 
-.suit-items {
+.suit-items, .shirt-items {
     max-width: 100%;
     /* width: 100%;
     min-height: 100px; */
 }
 
-.suit-items img{
+.suit-items img, .shirt-items img{
     width:85%;
     
+}
+
+/* IMAGES IN THE BOTTOM SECTION */
+
+.section-form {
+    margin-top: -15px;
+    background-color: blue;
+}
+.container-main2 {
+    max-width: 100%;
+    margin: 5.6rem 3.8rem;
+    
+}
+
+.split img{
+    margin-left: -15%;
+    margin-top: -2px;
+}
+
+.sign {
+    background-color: cadetblue;
+}
+
+footer p {
+    text-align: center;
 }
