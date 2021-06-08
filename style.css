@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
 
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+
 h4 {
     text-align: center;
     margin-top: 20px;
@@ -29,7 +37,10 @@ h4 {
     max-height: 100%;
     height: 100%;
 
-    
+}
+
+.row {
+    --bs-gutter-x: 0;
 }
 
 a.nav-link {
@@ -108,11 +119,74 @@ a.nav-link {
     
 }
 
+
+
+
+/*Grid rows */
+
+.subtitle {
+    padding: 80px 0px 50px 0px;
+    margin-left: 18%;
+}
+
+.line {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem;
+    max-width: 1000px;
+    min-height: 100px;
+    margin: 1rem auto;
+    transition: all 250ms ease;
+
+
+}
+
+.line2 {
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem;
+    max-width: 1000px;
+    min-height: 100px;
+    margin: 1rem auto;
+    transition: all 250ms ease;
+
+
+}
+
+img.items {
+    
+    
+    display: flex;
+    align-items: center;
+    object-fit:contain;
+    background-size:contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    
+    transition: all 350ms ease;
+}
+
+.items2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 /* IMAGES IN THE BOTTOM SECTION */
 
 .section-form {
-    margin-top: -15px;
-    background-color: blue;
+    margin-top: 95px;
+    background-color: #0B1131;
 }
 .container-main2 {
     max-width: 100%;
@@ -121,14 +195,291 @@ a.nav-link {
 }
 
 .split img{
+    object-fit: cover;
     margin-left: -15%;
     margin-top: -2px;
 }
 
 .sign {
-    background-color: cadetblue;
+    display: flex;
+    align-content: space-around;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0B1131;
+    padding-left: 5rem;
+}
+
+.box-title {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 8%;
+}
+
+.box-mail {
+    max-width: 100%;
+    width: 65%;
+    margin-top: 8%;
+    
+}
+
+#email {
+    display: flex;
+    align-content: flex-start;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: #0B1131;
+    color: white;
+    width: 80%;
+}
+
+
+.box-mail button {
+    border: 2px solid white;
+    width: 120px;
+    
+    
+}
+
+
+.btn-primary {
+    background-color: #0B1131;
 }
 
 footer p {
     text-align: center;
 }
+
+
+/*Media Query Breakpoints *******************/
+
+
+@media(min-width: 800px) {
+    
+    .line, .line2{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px;
+        grid-gap: 2rem;
+    }
+
+}
+
+/*800 - 991 Sign Up Form*/
+@media only screen and (min-width: 800px) and (max-width: 991px) {
+
+    .header-text {
+        font-size: 3.3rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        font-family: 'Merriweather', serif;
+    }
+
+    .subtitle {
+        margin-left: 5%;
+    }
+
+    .right-pic {
+        padding-top: 4rem;
+        margin-top: 2rem;
+    }
+
+    .container-main2 {
+        margin-left: 0;
+        margin-right: 0;
+        height: 50%;
+    }
+
+    .split img {
+        
+        height: 100%;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        
+    }
+
+    .split {
+        width: 60%;
+    }
+
+}
+
+
+
+/*Medium screen ***/
+
+@media(max-width: 799px) {
+
+
+    .img-wrap {
+        max-width: 799px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-text {
+        font-size: 3.1rem;
+    }
+
+    .con-text {
+        padding-top: 10%;
+    }
+
+    .text {
+        
+        margin-bottom: 10%;
+    }
+
+    .right-pic {
+        margin-top: 10%;
+    }
+
+    .subtitle {
+        margin-left: 5%;
+    }
+
+
+    /* GRID Image Configuration */
+
+    .line {
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 24rem 24rem;
+        grid-gap: 4.2rem;
+        
+    }
+
+
+
+    /* Sign Up Form */
+
+    .split img {
+        display: none;
+
+    }
+
+    .container-main2 {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+    
+
+
+
+}
+
+/*Media Query Small Screen Sizes ****************/
+
+@media screen and (max-width: 480px) {
+
+    
+
+    .row {
+        --bs-gutter-x:0;
+    }
+
+
+    .img-wrap img{
+        max-width: 480px;
+        width: 100%;
+        height: 70%;
+    }
+
+    .img-wrap {
+        height: 100%;
+        max-height: 480px;
+    }
+
+    .header-text{
+        font-size: 24px;
+        padding: 0;
+    }
+
+    .split img {
+        max-width: 480px;
+        width: 100%;
+    }
+
+    .left-pic{
+        padding-top: 0;
+    }
+
+    .right-pic, .con-text{
+        margin-top: 5rem;
+    }
+
+
+    .title{
+        font-family: 'Merriweather', serif;
+    }
+
+    .subtitle{
+        margin-left: 5%;
+        font-family: 'Merriweather', serif;
+    }
+
+
+    /* Grid Images */
+
+    .line {
+        grid-gap: 5rem;
+    }
+
+    .items2{
+
+        object-fit: cover;
+    }
+
+
+    /*Sign up form */
+
+    .container-main2 {
+        margin: 0;
+        padding: 2.5rem 2.5rem;
+        text-align: center;
+
+    }
+
+    .split {
+        display: none;
+    }
+
+    .box-title{
+        margin-left: 0;
+    }
+
+    .box-mail{
+        display: inline-flex;
+        text-align: left;
+    }
+
+    .box-mail button {
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .box-mail input {
+        
+        width: 100%;
+    }
+
+    #email {
+        align-content: flex-start;
+        border: none;
+        border-bottom: 2px solid white;
+        background-color: #0B1131;
+        color: white;
+        width: 80%;
+    }
+
+
+    footer {
+        margin-top: 2.4rem;
+    }
+
+
+}
+    
