@@ -308,7 +308,7 @@ footer p {
 
 
 
-/*Medium screen ***/
+/*Medium screen ***************************/
 
 @media(max-width: 799px) {
 
@@ -317,6 +317,7 @@ footer p {
         max-width: 799px;
         width: 100%;
         height: 100%;
+        object-fit: contain;
     }
 
     .header-text {
@@ -381,16 +382,16 @@ footer p {
     }
 
 
-    .img-wrap img{
-        max-width: 480px;
-        width: 100%;
-        height: 70%;
+    .img-wrap {
+        
+        height: 100%;
+        background-image: url('img/imgsuitbackground1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
     }
 
-    .img-wrap {
-        height: 100%;
-        max-height: 480px;
-    }
+   
 
     .header-text{
         font-size: 24px;
@@ -404,10 +405,16 @@ footer p {
 
     .left-pic{
         padding-top: 0;
+        margin-top: 3rem;
     }
 
     .right-pic, .con-text{
-        margin-top: 5rem;
+        margin-top: 4rem;
+        font-size: 36px;
+    }
+
+    .text {
+        font-size: 21px;
     }
 
 
@@ -423,9 +430,7 @@ footer p {
 
     /* Grid Images */
 
-    body {
-        max-width: 480px;
-    }
+   
 
     .line {
         
@@ -450,6 +455,10 @@ footer p {
         padding: 2.5rem 2.5rem;
         text-align: center;
 
+    }
+
+    .sign {
+        padding-left: 0;
     }
 
     .split {
