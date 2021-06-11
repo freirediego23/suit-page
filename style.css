@@ -456,11 +456,11 @@ footer p {
         color: #1b262c;
         font-weight: bold;
         font-family: 'Merriweather', serif;
-        font-size: 30px;
+        font-size: 26px;
         max-width: 90%;
        
         top: 5%;
-        left: 22%;
+        left: 26%;
     }
 
 
@@ -485,6 +485,11 @@ footer p {
 
     .text {
         font-size: 21px;
+        margin-bottom: 4rem;
+    }
+
+    .con-text {
+        margin-top: 0;
     }
 
 
@@ -537,6 +542,7 @@ footer p {
 
     .box-title{
         margin-left: 0;
+        text-align: left;
     }
 
     .box-mail{
