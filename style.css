@@ -450,17 +450,18 @@ footer p {
         display: inline-block;
         font-size: 30px;
         padding: 0;
-
         position: absolute;
         background-color: transparent;
         color: #1b262c;
         font-weight: bold;
         font-family: 'Merriweather', serif;
         font-size: 26px;
-        max-width: 90%;
-       
+        text-align: center;
         top: 5%;
-        left: 26%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
     }
 
 
